@@ -1,0 +1,18 @@
+cette syntaxe permettrai de remplacer la boucle foreach de card.php
+
+<?php/*
+on peut utiliser une f+ array_map qui applique une f° sur ls éléments d'1 tableau
+elle prd en params (callable) $callback, array $array1
+$categories = array_map(function($category) use ($router){
+    $url = $router->url('category',['id' => $category->getId(), 'slug' => $category->getSlug()]);
+    return <<<HTML
+        <a href="{$url}">{$category->getName()} </a>
+HTML;
+}, $post->getCategories());
+donc au lieu de la boucle foreach() après la ligne 25
+ <?php if(!empty($post->getCategories())): ?>
+ ::
+ <?php implode(', ', $categories )?>
+ <?php endif ?>
+
+*/?>
